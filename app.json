@@ -8,9 +8,10 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "https://image.freepik.com/free-vector/taxi-city_1270-526.jpg",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "size": 12,
     },
     "updates": {
       "fallbackToCacheTimeout": 0

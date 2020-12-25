@@ -13,6 +13,7 @@ import HomeScreen from '../screens/HomeScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
 import MapScreen from '../screens/MapScreen';
+import SearchScreen from '../screens/SearchScreen';
 
 
 // If you are not familiar with React Navigation, we recommend going through the
@@ -40,6 +41,7 @@ function RootNavigator() {
       <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen}/>
       <Stack.Screen name="Signup" component={SignUpScreen}/>
       <Stack.Screen name="Login" component={LoginScreen}/>
+      <Stack.Screen name="Search" component={SearchScreen}/>
       <Stack.Screen name="Root" component={BottomTabNavigator} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
