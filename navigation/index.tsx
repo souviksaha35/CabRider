@@ -7,6 +7,13 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
+import LoginScreen from '../screens/LoginScreen';
+import AuthLoadingScreen from '../screens/AuthLoadingScreen';
+import HomeScreen from '../screens/HomeScreen';
+import SignUpScreen from '../screens/SignUpScreen';
+import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
+import MapScreen from '../screens/MapScreen';
+
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -26,7 +33,13 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator initialRouteName="AuthLoading" screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="AuthLoading" component={AuthLoadingScreen}/>
+      <Stack.Screen name="Home" component={HomeScreen}/>
+      <Stack.Screen name="Map" component={MapScreen}/>
+      <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen}/>
+      <Stack.Screen name="Signup" component={SignUpScreen}/>
+      <Stack.Screen name="Login" component={LoginScreen}/>
       <Stack.Screen name="Root" component={BottomTabNavigator} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>

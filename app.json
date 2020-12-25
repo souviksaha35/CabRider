@@ -8,7 +8,7 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "https://image.freepik.com/free-vector/taxi-city_1270-526.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": { 
+        "googleMapsApiKey":"AIzaSyB-E-_WDuz6KlGeGzVNVGBkyqp6_5zS-1I"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+            "apiKey": "AIzaSyB-E-_WDuz6KlGeGzVNVGBkyqp6_5zS-1I"
+         }
       }
     },
     "web": {
